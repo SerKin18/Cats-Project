@@ -1,0 +1,273 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  height: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #fafafa;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+/* ul[class],
+ol[class] {
+  list-style: none;
+} */
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*-----header------------------*/
+.wrapper {
+  min-height: 100%;
+  background-color: #474747;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  background-color: #fff;
+  padding: 15px 30px;
+}
+.header {
+  display: flex;
+}
+.header div {
+  margin: 0px 10px 0px 10px;
+  background-color: #474747;
+  max-height: 80px;
+}
+.header_item-1 {
+  width: 20%;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  border: 1px solid #918f8f;
+  position: relative;
+}
+label {
+  position: absolute;
+  color: #474747;
+  top: 5px;
+  left: 5px;
+}
+.header_item-2 {
+  padding: 5px 0px 0px 10px;
+  width: 30%;
+}
+.header_item-3 {
+  padding: 5px 0px 0px 10px;
+  width: 50%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+/*-----main------------------*/
+
+.main {
+  margin-top: 20px;
+  display: flex;
+}
+section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-4 {
+  margin: 0px 0px 0px 10px;
+  padding: 10px 10px;
+  height: 60%;
+  background-color: #474747;
+}
+.section-7 {
+  margin: 0px 0px 0px 10px;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  border: 1px solid #918f8f;
+  position: relative;
+}
+.section-5 {
+  margin: 0px 10px 0px 20px;
+}
+.section-5_header {
+  padding: 10px 0px;
+  background-color: #918f8f;
+  color: #ffffff;
+  padding: 15px;
+  margin: 0px 0px 10px 0px;
+}
+.section-5_header-text p {
+  color: #474747;
+}
+.section-5_header-text b {
+  color: #474747;
+  font-weight: 700;
+}
+.section-5_header-text span {
+  color: #474747;
+  font-weight: 700;
+  margin: 0px 5px 0px 0px;
+}
+.section-6_items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item_section6 {
+  margin: 10px 10px;
+  height: 150px;
+  width: 110px;
+  border: 1px solid #918f8f;
+}
+
+.section-5-bottom {
+  padding: 0px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0px 0px 0px;
+  height: 220px;
+}
+.section-8 {
+  padding: 10px 10px;
+  margin: 0px 10px 0px 10px;
+  background-color: #918f8f;
+  color: #ffffff;
+  width: 50%;
+}
+.section-9 {
+  padding: 10px 10px;
+  background-color: #918f8f;
+  color: #ffffff;
+  width: 50%;
+}
+.section-9 p {
+  color: #474747;
+}
+
+/*-----footer------------------*/
+.footer {
+  margin-top: 20px;
+  color: #fafafa;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content_item {
+  background-color: #474747;
+  margin: 0px 10px 0px 10px;
+  background-color: #474747;
+  width: 33.333%;
+  padding: 15px 15px;
+  column-count:2 ;
+}
+.item-footer {
+}
+.item-footer_list__ol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px;
+  align-items:start;
+  column-count:2 ;
+  
+}
+.item-footer_list__ol li {
+  list-style: none;
+  column-count:2 ;
+}
+.item-footer_list__ul {
+  display: flex;
+  flex-direction: column;
+}
+.item-footer_list__ul li {
+  margin: 0px 0px 0px 15px;
+}
+.items-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: #fafafa;
+}
+.items-footer-child {
+  background-color: #474747;
+  margin: 10px 0px 10px 0px;
+  height: 50%;
+  padding: 10px 10px;
+  align-items: center;
+}
+.items-footer-child:last-child {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: end;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  border: 1px solid #918f8f;
+  position: relative;
+}
